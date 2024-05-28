@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.phone {
+    width: 360px;
+    height: 640px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid black;
+    margin: auto;
+}
+
+#bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 254px;
+    object-fit: cover;
+    z-index: -9999;
+    opacity: 0.7;
+}
+
+#header {
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#alram, #upper_menu {
+    width: 10%;
+    height: 65%;
+    margin: 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#alram {
+    background-image: url('alram.PNG');
+}
+
+#upper_menu {
+    background-image: url('upper_menu.PNG');
+}
+
+.menu {
+    background-color: #396b0b;
+    color: white;
+    height: 11%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu1 {
+    height: 75%;
+    width: 90%;
+    border-radius: 25px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    width: 100%;
+    height: 75%;
+    overflow-y: scroll;
+}
+
+#chat-container {
+    padding: 10px;
+}
+
+.chat2, .chat4{
+    position: relative;
+    max-width: calc(100% - 70px);
+    padding: 10px;
+    margin: 7px 20px;
+    border-radius: 10px;
+    font-size: 13px;
+    background-color: rgb(118, 199, 118);
+}
+
+.chat2:before, .chat4:before {
+    position: absolute;
+    content: "◀";
+    top: 0;
+    left: -15px;
+    font-size: 1.5rem;
+    color: rgb(118, 199, 118);
+}
+
+.chat1, .chat3, .chat5 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 7px 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    background-color: #F9EB54;
+}
+
+.chat1:before, .chat3:before, .chat5:before {
+    position: relative;
+    content: "▶";
+    color: #F9EB54;
+    right: -20px;
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px solid black;
+}
+
+#chat-input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#send-button {
+    padding: 10px;
+    background-color: #396b0b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
